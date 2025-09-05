@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Minesweeper</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Minesweeper</h1>
+
+  <div>
+    <label>Рівень складності:</label>
+    <select id="level">
+      <option value="easy">Легкий (8x8, 10 мін)</option>
+      <option value="medium" selected>Середній (16x16, 40 мін)</option>
+      <option value="hard">Складний (30x16, 99 мін)</option>
+    </select>
+    <button onclick="newGame()">Нова гра</button>
+  </div>
+
+  <div id="board" class="board"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
